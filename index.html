@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+
+  <meta name="description" content="Project page for Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking." />
+  <meta property="og:title" content="Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking" />
+  <meta property="og:description" content="A general learning framework for accurate humanoid foothold tracking." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/teaser.svg" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#method">Method</a>
+      <a href="#abstract">Abstract</a>
+      <a href="#video">Video</a>
+      <a href="#citation">Citation</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="venue">RSS 2026</p>
+
+      <h1>
+        Mind Your Steps:
+        <span>A General Learning Framework for Accurate Humanoid Foothold Tracking</span>
+      </h1>
+
+      <p class="subtitle">
+        A lightweight framework for learning accurate, robust, and general-purpose 3D foothold-tracking policies for humanoid locomotion.
+      </p>
+
+      <div class="authors">
+        <a>Alessandro Montenegro</a><sup>1</sup>,
+        <a>Shihao Li</a><sup>2</sup>,
+        <a>Puze Liu</a><sup>2,3</sup>,
+        <a>Alberto Maria Metelli</a><sup>1</sup>,
+        <a>Jan Peters</a><sup>2&ndash;7</sup>
+      </div>
+
+      <div class="affiliations">
+        <span><sup>1</sup>Polytechnic University of Milan</span>
+        <span><sup>2</sup>Tongji University</span>
+        <span><sup>3</sup>Technical University of Darmstadt</span>
+        <span><sup>4</sup>German Research Center for Artificial Intelligence (DFKI)</span>
+        <span><sup>5</sup>hessian.AI</span>
+        <span><sup>6</sup>Robotics Institute Germany (RIG)</span>
+        <span><sup>7</sup>Centre for Cognitive Science</span>
+      </div>
+
+      <div class="buttons" aria-label="Project links">
+        <a class="button paper soon" href="#" onclick="return false;" data-tooltip="Coming Soon">
+          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+          <span>Paper</span>
+        </a>
+
+        <a class="button arxiv soon" href="#" onclick="return false;" data-tooltip="Coming Soon">
+          <i class="ai ai-arxiv" aria-hidden="true"></i>
+          <span>arXiv</span>
+        </a>
+
+        <a class="button code" href="https://github.com/MontenegroAlessandro/loco-mujoco">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <span>Code</span>
+        </a>
+
+        <a class="button video-button" href="#video">
+          <i class="fa-solid fa-video" aria-hidden="true"></i>
+          <span>Video</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="method" class="section method-section">
+      <div class="section-heading">
+        <h2>Method</h2>
+      </div>
+
+      <figure class="method-figure">
+        <img src="assets/overview.svg" alt="Overview of the proposed foothold-tracking framework" />
+        <figcaption>
+          Overview of the proposed general-purpose 3D foothold-tracking framework.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="abstract" class="section text-section">
+      <div class="section-heading">
+        <h2>Abstract</h2>
+      </div>
+
+      <div class="abstract-text">
+        <p>
+          Enabling humanoid robots to operate in complex, dynamic environments remains a critical challenge, fundamentally limited by the ability to navigate robustly, safely, and accurately. While reinforcement learning with velocity-commanded policies has achieved remarkable robustness in humanoid locomotion, this approach lacks explicit control of the foothold placement, leading to unsafe behavior, such as stepping onto human feet, or imprecise navigation, hindering the following manipulation task.
+        </p>
+
+        <p>
+          Conversely, explicit foothold-tracking policies offer a promising alternative by directly being commanded with target foot poses. However, existing approaches are often limited by unrealistic state assumptions, compromising real-world deployment, or they are part of staged pipelines, making them tied to specific downstream tasks.
+        </p>
+
+        <p>
+          In this work, we introduce a novel, lightweight framework for training general-purpose 3D foothold-tracking policies. By dynamically providing footstep support through a goal sampler, this method enables the learned policy to be agnostic to specific terrains. Our new target representation effectively mitigates challenges arising in the real world, such as noisy and inaccurate pose estimation and foot contact estimation.
+        </p>
+
+        <p>
+          Designed for direct real-world transfer, our policy acts as a standalone low-level controller that can be seamlessly paired with various high-level foothold generators. We demonstrate the effectiveness of our framework through extensive experiments in simulation and in the real world. By coupling our policy with different upstream planners, we achieve natural and accurate locomotion in challenging settings, paving the way for loco-manipulation tasks in complex environments.
+        </p>
+      </div>
+    </section>
+
+    <section id="video" class="section video-section">
+      <div class="section-heading">
+        <h2>Video</h2>
+      </div>
+
+      <div class="featured-video">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Paper video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="video-subsection">
+        <h3 class="subsection-title">Real-World Demonstrations</h3>
+
+        <div class="realworld-grid">
+          <article class="realworld-item">
+            <div class="video-wrapper placeholder-wrapper robot-placeholder" role="img" aria-label="Unitree G1 real-world demonstration coming soon">
+              <div class="demo-label">
+                <span>Unitree G1</span>
+                <p>Coming Soon</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="realworld-item">
+            <div class="video-wrapper placeholder-wrapper t1-placeholder" role="img" aria-label="Booster T1 real-world demonstration coming soon">
+              <div class="demo-label">
+                <span>Booster T1</span>
+                <p>Coming Soon</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="video-subsection">
+        <h3 class="subsection-title">Simulation Demos</h3>
+
+        <div class="sim-grid">
+          <article class="sim-card">
+            <div class="video-wrapper sim-video-wrapper">
+              <video autoplay muted loop playsinline preload="metadata" aria-label="Goal reaching simulation demo">
+                <source src="assets/videos/goal-reaching.mp4" type="video/mp4" />
+              </video>
+              <div class="demo-label demo-label-small">
+                <span>Precise Goal Reaching</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="sim-card">
+            <div class="video-wrapper sim-video-wrapper">
+              <video autoplay muted loop playsinline preload="metadata" aria-label="Narrow passage simulation demo">
+                <source src="assets/videos/narrow-bridge.mp4" type="video/mp4" />
+              </video>
+              <div class="demo-label demo-label-small">
+                <span>Narrow Bridge Traversal</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="sim-card">
+            <div class="video-wrapper sim-video-wrapper">
+              <video autoplay muted loop playsinline preload="metadata" aria-label="Cluttered environment simulation demo">
+                <source src="assets/videos/clustered-env.mp4" type="video/mp4" />
+              </video>
+              <div class="demo-label demo-label-small">
+                <span>Cluttered Foothold Planning</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="sim-card">
+            <div class="video-wrapper sim-video-wrapper placeholder-wrapper stairs-placeholder" role="img" aria-label="Stairs and elevation change simulation demo coming soon">
+              <div class="demo-label demo-label-small">
+                <span>3D Stair Traversal</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation" class="section text-section citation-section">
+      <div class="section-heading">
+        <h2>Citation</h2>
+      </div>
+
+      <div class="citation-header">
+        <p>BibTeX</p>
+        <button class="copy-button" type="button" data-copy-bibtex>
+          <i class="fa-regular fa-copy" aria-hidden="true"></i>
+          <span>Copy</span>
+        </button>
+      </div>
+
+      <pre><code id="bibtex">@inproceedings{montenegro2026mind,
+  title     = {Mind Your Steps: A General Learning Framework for Accurate Humanoid Foothold Tracking},
+  author    = {Montenegro, Alessandro and Li, Shihao and Liu, Puze and Metelli, Alberto Maria and Peters, Jan},
+  booktitle = {Robotics: Science and Systems},
+  year      = {2026}
+}</code></pre>
+    </section>
+  </main>
+
+  <script>
+    const copyButton = document.querySelector("[data-copy-bibtex]");
+
+    async function writeClipboardText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      const copied = document.execCommand("copy");
+      document.body.removeChild(textarea);
+
+      if (!copied) {
+        throw new Error("Copy command failed");
+      }
+    }
+
+    copyButton.addEventListener("click", async () => {
+      const bibtex = document.getElementById("bibtex").textContent.trim();
+      const label = copyButton.querySelector("span");
+      const oldLabel = label.textContent;
+
+      try {
+        await writeClipboardText(bibtex);
+        label.textContent = "Copied";
+      } catch (error) {
+        label.textContent = "Unavailable";
+      }
+
+      window.setTimeout(() => {
+        label.textContent = oldLabel;
+      }, 1300);
+    });
+  </script>
+</body>
+</html>
