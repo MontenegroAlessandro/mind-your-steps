@@ -44,7 +44,7 @@
         <a>Shihao Li</a><sup>2</sup>,
         <a>Puze Liu</a><sup>2,3</sup>,
         <a>Alberto Maria Metelli</a><sup>1</sup>,
-        <a>Jan Peters</a><sup>2&ndash;7</sup>
+        <a>Jan Peters</a><sup>2&ndash;6</sup>
       </div>
 
       <div class="affiliations">
@@ -54,7 +54,6 @@
         <span><sup>4</sup>German Research Center for Artificial Intelligence (DFKI)</span>
         <span><sup>5</sup>hessian.AI</span>
         <span><sup>6</sup>Robotics Institute Germany (RIG)</span>
-        <span><sup>7</sup>Centre for Cognitive Science</span>
       </div>
 
       <div class="buttons" aria-label="Project links">
@@ -136,70 +135,77 @@
       </div>
 
       <div class="video-subsection">
-        <h3 class="subsection-title">Real-World Demonstrations</h3>
 
         <div class="realworld-grid">
-          <article class="realworld-item">
-            <div class="video-wrapper placeholder-wrapper robot-placeholder" role="img" aria-label="Unitree G1 real-world demonstration coming soon">
-              <div class="demo-label">
-                <span>Unitree G1</span>
-                <p>Coming Soon</p>
+          <article class="realworld-item robot-demo-card t1-demo-card">
+            <h4>Booster T1</h4>
+
+            <div class="robot-demo-main split-demo-layout">
+              <div class="realworld-panel placeholder-wrapper t1-placeholder">
+                <span class="panel-label">Marker-Guided Foothold Tracking</span>
+                <video autoplay muted loop playsinline preload="metadata" aria-label="Booster T1 real-world demonstration video">
+                  <source src="assets/videos/BoosterT1/AccuLocoMarkers.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div class="embedded-sim-section">
+                <h5 class="sim-section-title">Simulation Demos</h5>
+
+                <div class="sim-grid">
+                  <article class="sim-card">
+                    <div class="video-wrapper sim-video-wrapper">
+                      <video autoplay muted loop playsinline preload="metadata" aria-label="Goal reaching simulation demo">
+                        <source src="assets/videos/BoosterT1/goal-reaching.mp4" type="video/mp4" />
+                      </video>
+                      <div class="demo-label demo-label-small">
+                        <span>Precise Goal Reaching</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="sim-card">
+                    <div class="video-wrapper sim-video-wrapper">
+                      <video autoplay muted loop playsinline preload="metadata" aria-label="Narrow bridge simulation demo">
+                        <source src="assets/videos/BoosterT1/narrow-bridge.mp4" type="video/mp4" />
+                      </video>
+                      <div class="demo-label demo-label-small">
+                        <span>Narrow Bridge Traversal</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="sim-card">
+                    <div class="video-wrapper sim-video-wrapper">
+                      <video autoplay muted loop playsinline preload="metadata" aria-label="Cluttered environment simulation demo">
+                        <source src="assets/videos/BoosterT1/clustered-env.mp4" type="video/mp4" />
+                      </video>
+                      <div class="demo-label demo-label-small">
+                        <span>Cluttered Navigation</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="sim-card">
+                    <div class="video-wrapper sim-video-wrapper placeholder-wrapper stairs-placeholder" role="img" aria-label="Stairs traversal simulation demo coming soon">
+                      <div class="demo-label demo-label-small">
+                        <span>3D Stair Traversal</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </article>
 
-          <article class="realworld-item">
-            <div class="video-wrapper placeholder-wrapper t1-placeholder" role="img" aria-label="Booster T1 real-world demonstration coming soon">
-              <div class="demo-label">
-                <span>Booster T1</span>
-                <p>Coming Soon</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
+          <article class="realworld-item robot-demo-card g1-demo-card">
+            <h4>Unitree G1</h4>
 
-      <div class="video-subsection">
-        <h3 class="subsection-title">Simulation Demos</h3>
-
-        <div class="sim-grid">
-          <article class="sim-card">
-            <div class="video-wrapper sim-video-wrapper">
-              <video autoplay muted loop playsinline preload="metadata" aria-label="Goal reaching simulation demo">
-                <source src="assets/videos/goal-reaching.mp4" type="video/mp4" />
-              </video>
-              <div class="demo-label demo-label-small">
-                <span>Precise Goal Reaching</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="sim-card">
-            <div class="video-wrapper sim-video-wrapper">
-              <video autoplay muted loop playsinline preload="metadata" aria-label="Narrow passage simulation demo">
-                <source src="assets/videos/narrow-bridge.mp4" type="video/mp4" />
-              </video>
-              <div class="demo-label demo-label-small">
-                <span>Narrow Bridge Traversal</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="sim-card">
-            <div class="video-wrapper sim-video-wrapper">
-              <video autoplay muted loop playsinline preload="metadata" aria-label="Cluttered environment simulation demo">
-                <source src="assets/videos/clustered-env.mp4" type="video/mp4" />
-              </video>
-              <div class="demo-label demo-label-small">
-                <span>Cluttered Foothold Planning</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="sim-card">
-            <div class="video-wrapper sim-video-wrapper placeholder-wrapper stairs-placeholder" role="img" aria-label="Stairs and elevation change simulation demo coming soon">
-              <div class="demo-label demo-label-small">
-                <span>3D Stair Traversal</span>
+            <div class="realworld-panel placeholder-wrapper robot-placeholder">
+              <!-- <span class="panel-label">Real-World Demonstration</span> -->
+              <div class="coming-soon">
+                <i class="fa-regular fa-circle-play" aria-hidden="true"></i>
+                <strong>Coming Soon</strong>
+                <span>Videos for Unitree G1 are coming soon.</span>
               </div>
             </div>
           </article>
@@ -230,6 +236,35 @@
   </main>
 
   <script>
+    const demoVideos = document.querySelectorAll(".realworld-panel video, .sim-video-wrapper video");
+
+    demoVideos.forEach((video) => {
+      const showControls = () => {
+        video.controls = true;
+      };
+
+      const hideControls = () => {
+        if (document.fullscreenElement === video) {
+          return;
+        }
+
+        if (video.matches(":hover") || document.activeElement === video) {
+          return;
+        }
+
+        video.controls = false;
+      };
+
+      video.controls = false;
+      video.addEventListener("pointerenter", showControls);
+      video.addEventListener("pointerleave", hideControls);
+      video.addEventListener("focus", showControls);
+      video.addEventListener("blur", hideControls);
+      video.addEventListener("click", showControls);
+      video.addEventListener("touchstart", showControls, { passive: true });
+      document.addEventListener("fullscreenchange", hideControls);
+    });
+
     const copyButton = document.querySelector("[data-copy-bibtex]");
 
     async function writeClipboardText(text) {
