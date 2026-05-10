@@ -442,11 +442,6 @@ main {
   gap: 20px;
 }
 
-.t1-stacked-layout .sim-section-title {
-  position: static;
-  margin: 0 0 12px;
-}
-
 .t1-stacked-layout .sim-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -570,6 +565,14 @@ main {
   flex: 1;
   height: 1px;
   background: rgba(27, 35, 42, 0.11);
+}
+
+.t1-sim-title {
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  margin: 0;
 }
 
 .sim-grid {
