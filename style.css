@@ -433,6 +433,22 @@ main {
 
 .t1-demo-card .realworld-panel {
   min-height: 0;
+  aspect-ratio: 16 / 9;
+}
+
+.t1-stacked-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.t1-stacked-layout .sim-section-title {
+  position: static;
+  margin: 0 0 12px;
+}
+
+.t1-stacked-layout .sim-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .g1-demo-card .realworld-panel {
@@ -754,7 +770,8 @@ code {
     width: 42px;
   }
 
-  .sim-grid {
+  .sim-grid,
+  .t1-stacked-layout .sim-grid {
     grid-template-columns: 1fr;
   }
 
