@@ -88,9 +88,9 @@ button {
   justify-content: center;
   margin: 0 0 18px;
   padding: 6px 14px;
-  color: var(--accent-strong);
-  background: rgba(23, 109, 122, 0.1);
-  border: 1px solid rgba(23, 109, 122, 0.16);
+  color: #0043ce;
+  background: rgba(0, 67, 206, 0.1);
+  border: 1px solid rgba(0, 67, 206, 0.16);
   border-radius: var(--radius-pill);
   font-size: 0.9rem;
   font-weight: 800;
@@ -186,19 +186,19 @@ h1 span {
 }
 
 .button.paper {
-  background: #7a4b42;
+  background: #0043ce;
 }
 
 .button.arxiv {
-  background: #31343a;
+  background: #a2191f;
 }
 
 .button.code {
-  background: #1f6b4a;
+  background: #24292f;
 }
 
 .button.video-button {
-  background: var(--accent);
+  background: #005d5d;
 }
 
 .button.soon {
