@@ -75,7 +75,7 @@
           <span>Paper</span>
         </a>
 
-        <a class="button arxiv" href="http://arxiv.org/abs/2606.08253">
+        <a class="button arxiv" href="http://arxiv.org/pdf/2606.08253">
           <i class="ai ai-arxiv" aria-hidden="true"></i>
           <span>arXiv</span>
         </a>
@@ -238,12 +238,40 @@
           <article class="realworld-item robot-demo-card g1-demo-card">
             <h4>Unitree G1</h4>
 
-            <div class="realworld-panel placeholder-wrapper robot-placeholder">
-              <!-- <span class="panel-label">Real-World Demonstration</span> -->
-              <div class="coming-soon">
-                <i class="fa-regular fa-circle-play" aria-hidden="true"></i>
-                <strong>Coming Soon</strong>
-                <span>Videos for Unitree G1 are coming soon.</span>
+            <div class="embedded-sim-section">
+              <div class="sim-grid">
+                <article class="sim-card">
+                  <div class="video-wrapper sim-video-wrapper">
+                    <video autoplay muted loop playsinline preload="metadata" aria-label="Unitree G1 simple terrain variability demo">
+                      <source src="assets/G1/simple_terrain.mov" type="video/mp4" />
+                    </video>
+                    <div class="demo-label demo-label-small">
+                      <span>Simple Terrain Variability</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="sim-card">
+                  <div class="video-wrapper sim-video-wrapper">
+                    <video autoplay muted loop playsinline preload="metadata" aria-label="Unitree G1 medium terrain variability demo">
+                      <source src="assets/G1/medium_terrain.mov" type="video/mp4" />
+                    </video>
+                    <div class="demo-label demo-label-small">
+                      <span>Medium Terrain Variability</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="sim-card">
+                  <div class="video-wrapper sim-video-wrapper">
+                    <video autoplay muted loop playsinline preload="metadata" aria-label="Unitree G1 hard terrain variability demo">
+                      <source src="assets/G1/hard_terrain.mov" type="video/mp4" />
+                    </video>
+                    <div class="demo-label demo-label-small">
+                      <span>Hard Terrain Variability</span>
+                    </div>
+                  </div>
+                </article>
               </div>
             </div>
           </article>

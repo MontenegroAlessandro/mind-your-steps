@@ -452,6 +452,10 @@ main {
   min-height: 260px;
 }
 
+.g1-demo-card .sim-grid {
+  grid-template-columns: 1fr;
+}
+
 .realworld-panel .panel-label {
   position: absolute;
   left: 18px;
